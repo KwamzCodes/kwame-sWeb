@@ -1,0 +1,90 @@
+@media screen and (max-width: 1200px) {
+  .hamburger-menu {
+    display: block;
+    transition: 0.5s ease;
+    
+  }
+
+  main {
+    width: 100%;
+    touch-action: pan-y;
+  }
+  .userInfo {
+    margin-top: -100px;
+  }
+  .myInfo {
+    margin-top: 70px;
+    flex-wrap: wrap;
+    
+  }
+  #about, #experience {
+    margin-top: 200px;
+  }
+  .aboutContainer,
+  .frame {
+    flex-wrap: wrap;
+  }
+  .sideProfile {
+    width: 380px;
+    height: 380px;
+    margin-top: -50px;
+  }
+  .arrows{
+    visibility: hidden;
+  }
+  .description{
+    padding: 0 20px;
+  }
+  .frontEnd,
+  .backEnd{
+   width: 400px;
+   height: 300px;
+   
+  }
+  .languages{
+    gap: 100px;
+  }
+  .contactContainer {
+    width: 400px;
+    height: 120px;
+    flex-wrap: wrap;
+    gap: 0px;
+    
+  }
+ 
+  #nav-links {
+    width: 100%;
+    height: 22vh;
+    background: linear-gradient(90deg, #410258, #a90ed8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    position: fixed;
+    top: 120px;
+    left: -100%;
+    color: white;
+    transition: 0.3s ease-in-out;
+    border-radius: 0px 0px 20px 20px;
+  }
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 80px;
+    height: 80px;
+  }
+  .hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  #nav-links.active {
+    left: 0;
+    transition: 0.3s;
+  }
+}
